@@ -152,7 +152,7 @@ fn collect_inputs(inputs: &[String], state: &AuditState) -> Result<WorkflowRegis
             // If this input isn't a file or directory, it's probably an
             // `owner/repo(@ref)?` slug.
 
-            // Our pre-existing `uses: <slug>` parser does 90% of the work for us.
+            // Our preexisting `uses: <slug>` parser does 90% of the work for us.
             let Some(Uses::Repository(slug)) = Uses::from_step(input) else {
                 return Err(anyhow!(tip(
                     format!("invalid input: {input}"),
