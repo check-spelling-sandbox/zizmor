@@ -242,7 +242,7 @@ cargo test
 
 !!! tip
 
-    When in doubt, refer to pre-existing audits for inspiration!
+    When in doubt, refer to preexisting audits for inspiration!
 
 The general procedure for adding a new audit can be described as:
 
